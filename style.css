@@ -1,0 +1,232 @@
+/* OVERALL */
+
+:root {
+  --first-color: hsl(217, 19%, 35%);
+  --second-color: hsl(214, 17%, 51%);
+  --third-color: hsl(212, 23%, 69%);
+  --fourth-color: hsl(210, 46%, 95%);
+  --fifth-color: hsl(0, 0%, 100%);
+  /*to use: color: var(--second-color); */
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  min-width: 375px;
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* MAIN */
+
+main {
+  background-color: var(--fifth-color);
+  width: 325px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.img-drawers {
+  width: 325px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 100% 25%;
+}
+
+.text-container {
+  padding: 10px 34px 5px;
+}
+
+h3,
+h4 {
+  color: var(--first-color);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 25px;
+}
+.author {
+  padding-top: 15px;
+  position: relative;
+}
+.img-author {
+  width: 40px;
+  border-radius: 50px;
+  margin-right: 20px;
+  display: inline;
+  float: left;
+}
+
+h4 {
+  display: inline-block;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.date {
+  margin-top: 2px;
+  margin-bottom: 0;
+  opacity: 60%;
+}
+
+.icon-not-clicked {
+  margin-left: 100px;
+  position: absolute;
+  left: 195px;
+  top: 22px;
+}
+
+.share {
+  background-color: var(--first-color);
+  width: 325px;
+  margin-left: -35px;
+  margin-top: 20px;
+  height: 80px;
+  padding: 18px 35px;
+}
+.share p {
+  display: inline;
+  letter-spacing: 5px;
+  color: var(--third-color);
+  vertical-align: middle;
+  height: 20px;
+  margin-right: 8px;
+}
+.icon-share {
+  background-color: var(--fourth-color);
+  padding: 9px;
+  border-radius: 50px;
+  width: 15px;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+.icon-share:hover {
+  cursor: pointer;
+}
+
+.icon-social {
+  background-color: var(--first-color);
+  color: var(--fifth-color);
+  padding: 0 8px;
+  font-size: 22px;
+}
+.icon-clicked {
+  background-color: var(--second-color);
+  color: var(--fifth-color);
+}
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  margin-top: 10px;
+}
+.attribution {
+  font-size: 10px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--first-color);
+}
+
+.attribution a:hover {
+  text-decoration: none;
+}
+
+/* JS */
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    width: 720px;
+    height: 270px;
+    box-shadow: 5px 0px 50px #adacac;
+  }
+
+  .img-drawers {
+    width: 275px;
+    height: 270px;
+    object-fit: cover;
+    object-position: 0% 25%;
+    float: left;
+  }
+
+  .text-container {
+    padding-left: 320px;
+    padding-right: 30px;
+  }
+
+  h3 {
+    font-size: 1.55em;
+    line-height: 27px;
+  }
+
+  .author {
+    padding-top: 6px;
+  }
+
+  .icon-not-clicked {
+    margin-left: 120px;
+    position: absolute;
+    left: 195px;
+    top: 13px;
+  }
+
+  .icon-not-clicked:hover {
+    background-color: var(--second-color);
+    color: var(--fifth-color);
+  }
+
+  .share-laptop {
+    background-color: var(--first-color);
+    width: 200px;
+    height: 25px;
+    padding: 18px 10px 18px 25px;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -120px;
+
+    box-shadow: 5px 10px 8px #e2e2e2;
+  }
+  .share-laptop p {
+    display: inline;
+    letter-spacing: 5px;
+    color: var(--third-color);
+    vertical-align: middle;
+    height: 20px;
+    margin-right: 2px;
+  }
+
+  .icon-social {
+    padding: 0 0 0 15px;
+    font-size: 22px;
+  }
+  .fa-pinterest {
+    padding-right: 0;
+  }
+  .icon-down {
+    color: var(--first-color);
+    position: absolute;
+    top: 63px;
+    left: 100px;
+    font-size: 40px;
+  }
+}
